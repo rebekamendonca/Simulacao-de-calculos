@@ -1,0 +1,49 @@
+﻿\documentclass[12pt,a4paper]{article}
+
+% UFC: A4; margens superior/esquerda 3 cm; inferior/direita 2 cm.
+% Texto: 12 pt, justificado, espacamento 1,5; legendas: 10 pt, simples.
+% Matematica: fonte matematica padrao do LaTeX (Computer Modern), sem newtxmath.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{newtxtext}
+\usepackage[a4paper,top=3cm,left=3cm,bottom=2cm,right=2cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx,booktabs,array,caption,float}
+
+\captionsetup{font={footnotesize,stretch=1},labelfont=bf,justification=centering}
+\usepackage{fancyhdr,titlesec}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\fontsize{10}{12}\selectfont\thepage}
+\titleformat{\section}{\normalfont\bfseries\normalsize}{\thesection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1\baselineskip}{0.45\baselineskip}
+\setlength{\intextsep}{9pt}
+\setlength{\textfloatsep}{12pt}
+\newcommand{\figsource}[1]{\par\vspace{2pt}{\centering\setstretch{1}\fontsize{10}{12}\selectfont Fonte: #1\par}}
+
+\begin{document}
+\noindent
+\begin{minipage}[c]{0.18\textwidth}
+  \includegraphics[width=\linewidth]{ufc.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}
+  \raggedright
+  {\bfseries\fontsize{11}{13}\selectfont UNIVERSIDADE FEDERAL DO CEARÁ\par}
+  \vspace{4pt}
+  {\fontsize{10}{12}\selectfont DEPARTAMENTO DE ENGENHARIA MECÂNICA\par}
+  \vspace{7pt}
+  {\bfseries\fontsize{14}{16}\selectfont RELATÓRIO DE SIMULAÇÃO\par}
+  \vspace{4pt}
+  {\fontsize{11}{13}\selectfont Aluna: Rebeka Mendonça Nascimento\par}
+\end{minipage}
+\vspace{0.2cm}
+\par\noindent\rule{\linewidth}{0.5pt}
+% CONTEUDO_UFC
+\end{document}
